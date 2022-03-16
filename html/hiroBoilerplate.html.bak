@@ -20,7 +20,7 @@
 			<a-marker preset='hiro'>
 				<!-- here define the content to display on top of the marker -->
 				<a-gltf-model id="lw" src="../assets/little_wizard/lilwizard.gltf" 
-					scale="0.1 -1 0.1" aabb-collider="objects: .target"				
+					scale="0.1 0.1 0.1" aabb-collider="objects: .target"				
 					rotation="-90 0 0">
 				</a-gltf-model>
 			</a-marker>
