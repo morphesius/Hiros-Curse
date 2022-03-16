@@ -42,6 +42,7 @@
 		let idx=2;
 		let scene = document.querySelector('a-scene');
 		let track=false;
+		let score = 0
 		
 		document.addEventListener('hitstart',function(evt){
 			if(track)processEvent(evt);      
@@ -59,6 +60,8 @@
 			if(evt.target.className.includes("target")){
 				let targetType = evt.target.className.includes("blue")?"blue":"green";
 				console.log("TBD: here's where something needs to happen based on targetType",targetType);
+				score+= 1
+				document.title = score;
 				if targetType == 'blue'
 					extinguishFlame()
 				if targetType == 'green'
