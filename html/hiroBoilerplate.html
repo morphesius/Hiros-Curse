@@ -43,6 +43,7 @@
 		let idx=2;
 		let scene = document.querySelector('a-scene');
 		let track=false;
+		let flames = 2
 		
 		document.addEventListener('hitstart',function(evt){
 			if(track)processEvent(evt);      
@@ -65,13 +66,15 @@
 				if (targetType === 'blue'){
 					console.log('sada')
 					extinguishFlame()
+					flames-=2
 				}
 				if (targetType === 'green'){
 					console.log('sadaa')
 					flameFactory(idx,scene)
+					flames +=2
 				}
 				
-				console.log(objects);
+			
 				
 				
 			}
