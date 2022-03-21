@@ -60,10 +60,10 @@
 			if(evt.target.className.includes("target")){
 				let targetType = evt.target.className.includes("blue")?"blue":"green";
 				console.log("TBD: here's where something needs to happen based on targetType",targetType);
-				if targetType == 'blue'
-					extinguishFlame()
-				if targetType == 'green'
-					flameFactory(idx,scene)
+				if targetType == 'blue'{
+					extinguishFlame()}
+				if targetType == 'green'{
+					flameFactory(idx,scene)}
 				
 				
 				
@@ -88,7 +88,7 @@
 		
 		function extinguishFlame(){
 			let randomPair = document.getElementsByClassName("pairs")[0];
-			let remove=document.getElementById(id);
+			let remove=document.getElementById(randomPair);
 			scene.removeChild(remove);
 		}
 	</script>
