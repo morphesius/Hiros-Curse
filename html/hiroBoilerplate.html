@@ -22,6 +22,8 @@
 					scale="0.1 0.1 0.1" aabb-collider="objects: .target"				
 					rotation="-90 0 0">
 				</a-gltf-model>
+				<a-entity id="win" text="value:Win rotation:-90 0 0 Opacity:0"></a-entity>
+				<a-entity id="lose"text="lose value:Lose rotation:-90 0 0 Opacity:0"></a-entity>
 			</a-marker>
 			
 			
@@ -73,7 +75,8 @@
 					flameFactory(idx,scene)
 					flames +=2
 				}
-				
+				if(flames === 0){
+					getElementByValue
 			
 				
 				
