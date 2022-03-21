@@ -61,8 +61,10 @@
 				let targetType = evt.target.className.includes("blue")?"blue":"green";
 				console.log("TBD: here's where something needs to happen based on targetType",targetType);
 				if targetType == 'blue'{
+					console.log('sada')
 					extinguishFlame()}
 				if targetType == 'green'{
+					console.log('sadaa')
 					flameFactory(idx,scene)}
 				
 				
@@ -88,7 +90,7 @@
 		
 		function extinguishFlame(){
 			let randomPair = document.getElementsByClassName("pairs")[0];
-			let remove=document.getElementById(randomPair);
+			let remove=document.getElementById(randomPair.id);
 			scene.removeChild(remove);
 		}
 	</script>
