@@ -49,9 +49,11 @@
 		});
 		document.addEventListener('markerFound',function(evt){
 			track=true;
+			console.log('markerFound evtListener')
 		});
 		document.addEventListener('markerLost',function(evt){
 			track=false;
+			console.log('markerLost evtListener');
 		});
 		
 		function processEvent(evt){//two events are generated...one each for the two entities that collided
