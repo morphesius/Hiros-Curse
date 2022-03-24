@@ -76,7 +76,7 @@
 					flameFactory(idx,scene)
 					flames +=2;}
 				if(flames>=10){
-					window.alert("You Win")
+					window.alert("You Lose")
 					for(let i=0;i<4;i++){extinguishFlame()}}
 			
 				
