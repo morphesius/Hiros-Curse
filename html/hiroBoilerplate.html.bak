@@ -22,8 +22,6 @@
 					scale="0.1 0.1 0.1" aabb-collider="objects: .target"				
 					rotation="-90 0 0">
 				</a-gltf-model>
-				<a-text id="win" text="You Win" scale="4 4 4" rotation ="-90 0 0" opacity="0"></a-entity>
-				<a-text id="lose" text="You Lose" scale="4 4 4" rotation ="-90 0 0" opacity="0"></a-entity>
 			</a-marker>
 			
 			
@@ -66,22 +64,17 @@
 				let targetType = evt.target.className.includes("blue")?"blue":"green";
 				console.log("TBD: here's where something needs to happen based on targetType",targetType);
 				if (targetType === 'blue'){
-					console.log('sada')
 					extinguishFlame()
 					flames-=2;
 				}
 				if (targetType === 'green'){
-					console.log('sadaa')
 					flameFactory(idx,scene)
 					flames +=2;
 				}
 				if(flames == 0){
-					win.setAttribute("opacity,1");
-					console.log('win should change opacity here');}
+					window.alert("You Win!")}
 				if(flames>=10){
-					lose.setAttribute("opacity,1");
-					console.log('lose should change opacity here');}
-					
+					window.alert("You Win")}
 			
 				
 				
